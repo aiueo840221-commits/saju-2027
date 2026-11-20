@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2027 정미년 신년 사주 · 내 사주로 보는 2027 운세</title>
+<meta name="description" content="생년월일시로 보는 2027 정미년(丁未年) 신년 사주. 사주 여덟 글자와 오행, 2027년 총운·재물운·연애운·일운·건강운과 행운 컬러를 한 장의 카드로.">
+<meta name="theme-color" content="#070B1E">
+<link rel="canonical" href="https://aiueo840221-commits.github.io/saju-2027/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2027 정미년 신년 사주 · 내 사주로 보는 2027 운세">
+<meta property="og:description" content="생년월일시로 읽는 2027 정미년 신년운세. 일주·오행·십성으로 보는 총운·재물·연애·일·건강과 행운 포인트.">
+<meta property="og:url" content="https://aiueo840221-commits.github.io/saju-2027/">
+<meta property="og:image" content="https://aiueo840221-commits.github.io/saju-2027/icons/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<style>html,body{margin:0;padding:0;background:#05081a;min-height:100dvh}</style>
+</head><body>
+<script>
+(function(){
+"use strict";
+var __p = "";
+window.__sajuPart = function(s){ __p += s; };
+window.__sajuBoot = function(){
+  var bin = atob(__p);
+  var bytes = new Uint8Array(bin.length);
+  for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  var ds = new DecompressionStream("gzip");
+  var reader = new Blob([bytes]).stream().pipeThrough(ds).getReader();
+  var dec = new TextDecoder();
+  var out = "";
+  function pump(){
+    return reader.read().then(function(r){
+      if (r.done) return out;
+      out += dec.decode(r.value, {stream:true});
+      return pump();
+    });
+  }
+  pump().then(function(txt){
+    var d = JSON.parse(txt);
+    var st = document.createElement("style");
+    st.textContent = d.css;
+    document.head.appendChild(st);
+    var frag = document.createElement("div");
+    frag.innerHTML = d.body;
+    while (frag.firstChild) document.body.appendChild(frag.firstChild);
+    var sc = document.createElement("script");
+    sc.textContent = d.js;
+    document.body.appendChild(sc);
+  }).catch(function(e){
+    document.body.style.color = "#eceaf6";
+    document.body.style.padding = "40px 20px";
+    document.body.textContent = "화면을 불러오지 못했어요. 새로고침해 주세요.";
+  });
+};
+})();
+</script>
+<script src="s1.js"></script>
+<script src="s2.js"></script>
+<script src="s3.js"></script>
+<script src="s4.js"></script>
+<script src="s5.js"></script>
+<script src="s6.js"></script>
+<script>window.__sajuBoot();</script>
+</body></html>
